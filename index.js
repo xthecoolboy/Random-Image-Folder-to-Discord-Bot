@@ -35,7 +35,7 @@ client.on('message', message => {
             
             // get the number of files in the folder.
             fs.readdir('./' + config.folder[i], (err, files) => {
-                number = files.length; // set the number of files to the number variable
+                number = variable; // set the number of files to the number variable
 
                 if (!args.length || command === "random")
                 { imageNumber = Math.floor(Math.random() * number) + 1; } // random integer of the images in the folder.
